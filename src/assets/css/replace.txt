@@ -1,0 +1,23 @@
+  normal: (
+    //主题字体颜色
+    //@include font_color
+    font-color: rgba(255,0,0, 1),
+    //第二主题字体颜色
+    //@include font_color1
+    font-color1: rgba(220,20,60, 1),
+    //主题背景色
+    //@include background_color
+    background: rgba(255,0,0, 1),
+    //第二主题背景色
+    //@include background_color1
+    background1: rgba(220,20,60, 1),
+    //日志页背景色
+    //@include background_color2
+    background2: rgba(255,0,0,0.02), 
+    //主题边框颜色
+    //@include border_color
+    border-color: rgba(255,0,0, 1),
+    //第二主题边框颜色
+    //@include border_color1
+    border-color1: rgba(220,20,60, 1),
+  ),

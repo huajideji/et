@@ -1,0 +1,65 @@
+{
+  "id": "3986669",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "34839511",
+      "name": "圆1",
+      "font_class": "yuan1",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "34839512",
+      "name": "圆2",
+      "font_class": "yuan2",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "34839513",
+      "name": "问",
+      "font_class": "wen",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "34839514",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "34839515",
+      "name": "喇叭",
+      "font_class": "laba",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "34839516",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "34837716",
+      "name": "竖杠1",
+      "font_class": "shugang1",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "34837717",
+      "name": "竖杠2",
+      "font_class": "shugang2",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+/*2.将定义好到主题添加到map中*/
+$themes: (
+  normal: ( //主题字体颜色
+    //@include font_color
+    font-color: rgba(96, 101, 236, 1),
+    //白色字体颜色
+    //@include font_color2
+    font-color2: rgba(255, 255, 255, 1),
+    //第二主题字体颜色
+    //@include font_color1
+    font-color1: rgba(41, 50, 252, 1),
+    //主题背景色
+    //@include background_color
+    background: rgba(96, 101, 236, 1),
+    //第二主题背景色
+    //@include background_color1
+    background1: rgba(41, 50, 252, 1),
+    //第三主题背景色
+    //@include background_color4
+    background4: rgba(21, 91, 212, 1),
+    //第三主题背景色
+    //@include background_color3
+    background3: rgba(96, 101, 236, 0.5),
+    //日志页背景色
+    //@include background_color2
+    background2: rgba(96, 101, 236, 0.02),
+    //主题边框颜色
+    //@include border_color
+    border-color: rgba(96, 101, 236, 1),
+    //第二主题边框颜色
+    //@include border_color1
+    border-color1: rgba(41, 50, 252, 1),
+    //第三主题边框颜色
+    //@include border_color2
+    border-color2: rgba(96, 101, 236, 1),
+    //导航左侧边框颜色
+    //@include border_left_color
+    border-left-color: rgba(96, 101, 236, 1),
+    // 底部边框颜色
+    border-bottom-color: rgba(96, 101, 236, 1),
+
+  ),
+  chunjie: ( //主题字体颜色
+    //@include font_color
+    font-color: rgba(244, 98, 103, 1),
+    //白色字体颜色
+    //@include font_color2
+    font-color2: rgba(255, 255, 255, 1),
+    //第二主题字体颜色
+    //@include font_color1
+    font-color1: rgba(220, 20, 60, 1),
+    //主题背景色
+    //@include background_color
+    background: rgba(244, 98, 103, 1),
+    //第二主题背景色
+    //@include background_color1
+    background1: rgba(220, 20, 60, 1),
+    //第三主题背景色
+    //@include background_color4
+    background4: rgba(205, 92, 92, 1),
+    //无需手动背景色
+    //@include background_color3
+    background3: rgba(255, 69, 0, 0.5),
+    //日志页背景色
+    //@include background_color2
+    background2: rgba(255, 0, 0, 0.02),
+    //主题边框颜色
+    //@include border_color
+    border-color:rgba(244, 98, 103, 1),
+    //第二主题边框颜色
+    //@include border_color1
+    border-color1: rgba(220, 20, 60, 1),
+    //第三主题边框颜色
+    //@include border_color2
+    border-color2: rgba(255, 69, 0, 0.5),
+    //导航左侧边框颜色
+    //@include border_left_color
+    border-left-color:rgba(244, 98, 103, 1),
+    // 底部边框颜色
+    border-bottom-color: rgba(244, 98, 103, 1),
+  ),
+);
+
+// 4. 调用混合指令themify() ,定义规则,此处到规则会替换@content
+@mixin font_color {
+  @include themify() {
+    color: themed("font-color") !important;
+  }
+}
+
+@mixin font_color1 {
+  @include themify() {
+    color: themed("font-color1") !important;
+  }
+}
+
+@mixin font_color2 {
+  @include themify() {
+    color: themed("font-color2") !important;
+  }
+}
+
+@mixin font_color3 {
+  @include themify() {
+    color: themed("font-color3") !important;
+  }
+}
+
+@mixin font_color4 {
+  @include themify() {
+    color: themed("font-color4") !important;
+  }
+}
+
+@mixin font_color5 {
+  @include themify() {
+    color: themed("font-color5") !important;
+  }
+}
+
+@mixin font_color6 {
+  @include themify() {
+    color: themed("font-color6") !important;
+  }
+}
+
+@mixin font_color7 {
+  @include themify() {
+    color: themed("font-color7") !important;
+  }
+}
+
+@mixin font_color8 {
+  @include themify() {
+    color: themed("font-color8") !important;
+  }
+}
+
+@mixin font_color9 {
+  @include themify() {
+    color: themed("font-color9") !important;
+  }
+}
+
+@mixin background_color {
+  @include themify() {
+    background-color: themed("background") !important;
+  }
+}
+
+@mixin background_login_color {
+  @include themify() {
+    background: themed("background_login") !important;
+  }
+}
+
+@mixin background_color1 {
+  @include themify() {
+    background-color: themed("background1") !important;
+  }
+}
+
+@mixin background_color2 {
+  @include themify() {
+    background-color: themed("background2") !important;
+  }
+}
+
+@mixin background_color3 {
+  @include themify() {
+    background-color: themed("background3") !important;
+  }
+}
+
+@mixin background_color4 {
+  @include themify() {
+    background-color: themed("background4") !important;
+  }
+}
+
+@mixin background_color5 {
+  @include themify() {
+    background-color: themed("background5") !important;
+  }
+}
+
+@mixin background_color6 {
+  @include themify() {
+    background-color: themed("background6") !important;
+  }
+}
+
+@mixin background_color7 {
+  @include themify() {
+    background-color: themed("background7") !important;
+  }
+}
+
+@mixin active_background {
+  @include themify() {
+    background-color: themed("active-background") !important;
+  }
+}
+
+@mixin active_background1 {
+  @include themify() {
+    background-color: themed("active-background1") !important;
+  }
+}
+
+@mixin border_color {
+  @include themify() {
+    border-color: themed("border-color") !important;
+  }
+}
+
+@mixin border_color1 {
+  @include themify() {
+    border-color: themed("border-color1") !important;
+  }
+}
+
+@mixin border_color2 {
+  @include themify() {
+    border-color: themed("border-color2") !important;
+  }
+}
+
+@mixin border_left_color {
+  @include themify() {
+    border-left-color: themed("border-left-color") !important;
+  }
+}
+
+@mixin border_bottom_color {
+  @include themify() {
+    border-bottom-color: themed("border-bottom-color") !important;
+  }
+}
+
+@mixin border_top_color {
+  @include themify() {
+    border-top-color: themed("border-top-color") !important;
+  }
+}
+
+@mixin box_shadow {
+  @include themify() {
+    box-shadow: themed("box-shadow") !important;
+  }
+}
+
+@mixin box_shadow1 {
+  @include themify() {
+    box-shadow: themed("box-shadow1") !important;
+  }
+}
+
+@mixin box_shadow2 {
+  @include themify() {
+    box-shadow: themed("box-shadow2") !important;
+  }
+}
+
+@mixin box_shadow3 {
+  @include themify() {
+    box-shadow: themed("box-shadow3") !important;
+  }
+}
+
+@mixin border {
+  @include themify() {
+    border: themed("border") !important;
+  }
+}
+
+@mixin img_linear {
+  @include themify() {
+    background-image: themed("img-linear") !important;
+  }
+}
+
+@mixin stroke {
+  @include themify() {
+    stroke: themed("stroke") !important;
+  }
+}
+
+// 3.定义混合指令, 切换主题,并将主题中到所有规则添加到theme-map中
+@mixin themify() {
+
+  @each $theme-name,
+  $map in $themes {
+
+    // & 表示父级元素
+    // !global 表示覆盖原来的
+    .theme-#{$theme-name} & {
+      $theme-map: () !global;
+
+      @each $key,
+      $value in $map {
+        $theme-map: map-merge($theme-map,
+          ($key: $value,
+          )) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+// 通过key获取map中到值
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

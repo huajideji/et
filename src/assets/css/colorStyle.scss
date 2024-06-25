@@ -1,0 +1,103 @@
+.purple-style{
+    background-color: #8C4Aff !important;
+}
+.purplr-linear-style{
+    background: linear-gradient(180deg, #F1E7FF 0%, #FBF8FF 100%) !important;
+}
+//["rgba(63,116,252,1.000)","rgba(235,242,255,1.000)","rgba(222,233,255,0.2)","rgba(63,116,252,0.05)"]
+//["rgba(140,74,255,1.000)","rgba(246,239,255,1.000)","rgba(251,248,255,1.000)","rgba(140,74,255,0.05)"]
+.purple-font-style{
+    color: #8C4Aff !important;
+}
+.fontcolorBlue{
+    color:#3F74FC  !important;
+}
+.fontcolorBluetwo{
+    color: #d9e3fe  !important;
+}
+.backcolorBlueone{
+    background-color: #fff  !important;
+}
+.backcolorBluetwo{
+     background-color: #d9e3fe  !important;
+}
+.backcolorBluethree{
+    background-color: #3F74FC !important;
+}
+.linearcolorBlue{
+    background: linear-gradient(180deg, #ebf2ff 0%, rgba(222,233,255,0.2) 100%) !important;
+}
+.bluepercent5{
+    background-color:rgba(63,116,252,0.05) !important;
+}
+.bluepercent10{
+    background-color:rgba(63,116,252,0.1) !important;
+}
+.blueborder{
+    border-color:  #3F74FC !important;
+}
+.bluebottomborder{
+
+    border-bottom: 2px solid  #3F74FC !important;
+}
+.purpleborder{
+    border-color:  #8c4aff !important;
+}
+.purplebottomborder{
+    border-bottom: 2px solid   #8c4aff !important;
+}
+.purplepercent5{
+    background-color:rgba(140,74,255,0.05) !important;
+}
+.purplepercent10{
+    background-color:rgba(140,74,255,0.1) !important;
+}
+.fontcolorpurple{
+    color:#8c4aff  !important;
+}
+.fontcolorpurpletwo{
+    color:#F1E7FF  !important;
+}
+.backcolorpurpleone{
+    background-color: #fff  !important;
+}
+.backcolorpurpletwo{
+     background-color: #F1E7FF  !important;
+}
+.backcolorpurplethree{
+    background-color: #8C4Aff !important;
+}
+.linearcolorpurple{
+    background: linear-gradient(180deg, #F6EFFF 0%, #fbf8ff 100%) !important;
+}
+.fontcolorBase{
+    color:var(--basecolor) !important;
+}
+.fontcolorBasetwo{
+    color: var(--tenPercent-color)  !important;
+}
+.backcolorBaseone{
+    background-color: #fff  !important;
+}
+.backcolorBasetwo{
+     background-color: var(--tenPercent-color)  !important;
+}
+.backcolorBasethree{
+    background-color: var(--basecolor) !important;
+}
+.linearcolorBase{
+    background: linear-gradient(180deg, var(--linear-colorbef) 0%, var(--linear-color) 100%) !important;
+}
+.Basepercent5{
+    background-color:var(--fivePercent-color) !important;
+}
+.Basepercent10{
+    background-color:var(--tenPercent-color) !important;
+}
+.Baseborder{
+    border-color:  var(--basecolor) !important;
+}
+.Basebottomborder{
+
+    border-bottom: 2px solid  var(--basecolor) !important;
+}

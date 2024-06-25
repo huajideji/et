@@ -1,0 +1,31 @@
+/* 下划线 */
+
+.bor {
+    height: 1px;
+    margin: 20px 0;
+    background-color: #ebedf0;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.cell .theme-color {
+    color: #6065ec;
+}
+
+.cell .danger-color {
+    color: #f33f3f;
+}
+
+.cell .number-color {
+    color: #f1ae00;
+}
+
+.el-form .theme-bg {
+    background-color: #6065ec;
+}

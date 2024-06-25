@@ -1,0 +1,526 @@
+// @themeColor:rgba(244,98,103,1); // 设置全局主题颜色
+// @themeColor: #2932fc; // 设置全局主题颜色
+@themeColor: #6065ec; // 设置全局主题颜色
+
+/* 下划线 */
+.bor {
+  height: 1px;
+  margin: 20px 0;
+  background-color: rgb(235, 237, 240);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.cell {
+  .theme-color {
+    color: @themeColor;
+  }
+
+  .danger-color {
+    color: #f33f3f;
+  }
+
+  .number-color {
+    color: #f1ae00;
+  }
+}
+
+.el-form {
+  .theme-bg {
+    background-color: @themeColor;
+    border-color: @themeColor;
+  }
+
+  .button-bg {
+    background-color: #6065ec;
+    ;
+    border-color: #6065ec;
+    ;
+  }
+
+}
+
+
+
+// 控制radio选中颜色
+.el-radio__inner {
+  &::after {
+    display: none !important;
+  }
+}
+
+.btn-next {
+  color: #999999 !important;
+}
+
+.el-pager {
+  li.active {
+    background-color: #6065EC;
+    color: #fff !important;
+  }
+
+  li {
+    border: solid 1px #D8D8D8 !important;
+    color: #999;
+    margin: 0px 3px !important;
+    min-width: 28.5px !important;
+  }
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: @themeColor  !important;
+  background: url('../images/radio.png') !important;
+  background-size: 100% !important;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+  color: #606266 !important;
+}
+
+// 控制checkbox选中颜色
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  border-color: @themeColor  !important;
+  background: @themeColor  !important;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: #606266 !important;
+}
+
+// 更改element-ui中输入框大小
+.el-form-item__label {
+  line-height: normal !important;
+}
+
+// 更改element-ui中输入框focus,hover后边框颜色
+.el-input.is-active .el-input__inner,
+.el-input__inner:focus,
+.el-textarea__inner:focus {
+  border-color: @themeColor  !important;
+}
+
+.el-radio__inner:hover {
+  border-color: @themeColor  !important;
+}
+
+.el-form-item__content {
+  .el-radio-group {
+    position: unset;
+    margin-bottom: 10px;
+  }
+
+  .el-input__inner {
+    height: 32px !important;
+    line-height: 32px !important;
+  }
+}
+
+.el-input__icon {
+  line-height: 32px !important;
+}
+
+// 更改单选框颜色样式
+.el-radio-button__orig-radio:checked+.el-radio-button__inner{
+  background-color: #6065EC !important;
+  color: white !important;
+  border: none;
+  box-shadow:none
+}
+.el-radio-button__inner {
+  height: 32px;
+  color: #999999 !important;
+  padding: 9px 20px !important;
+}
+.el-radio-button__inner:hover {
+  color: #6065EC !important;
+}
+
+
+// 
+// 更改弹出框按钮颜色
+.el-message-box__btns button:nth-child(2) {
+  background-color: @themeColor  !important;
+  border-color: @themeColor  !important;
+}
+
+// 更改基本按钮颜色
+.dialog-footer {
+  .el-button--primary {
+    background-color: @themeColor  !important;
+    border-color: @themeColor  !important;
+  }
+
+}
+
+.el-dialog__headerbtn:hover .el-dialog__close {
+  color: @themeColor  !important;
+}
+
+.el-message-box__headerbtn:hover .el-message-box__close {
+  color: @themeColor  !important;
+}
+
+// 分页器选中颜色更改
+.el-select-dropdown__item.selected {
+  color: @themeColor  !important;
+}
+
+// .el-button:focus, .el-button:hover {
+//   color: #fff !important;
+//   border-color: @themeColor  !important;
+//   background-color: @themeColor  !important;
+// }
+.el-tooltip__popper[x-placement^=bottom] .popper__arrow {
+  border-width: 0px;
+  top: 0px !important;
+}
+
+.el-tooltip__popper[x-placement^=bottom] {
+  margin-top: -5px !important;
+}
+
+
+/*新手指引*/
+.guide-nav-box {
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  z-index: 1001;
+}
+
+.guide-nav-box-left {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 1001;
+}
+
+.guideMask {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  // padding-left: 24%;
+}
+
+.guide-box {
+  margin-top: 142px;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+
+  .guide-arrow {
+    .cir1 {
+      width: 16px;
+      height: 16px;
+      line-height: 14px;
+      border-radius: 50%;
+      text-align: center;
+      background-color: #fff;
+      .cir2 {
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 50%;
+        line-height: 15px;
+        background-color: #6065EC;
+      }
+    }
+    .line-x {
+      width: 151px;
+      height: 2px;
+      background: linear-gradient(180deg, #f8f8fecc 0%, #9599f7ff 100%);
+    }
+    .line-y {
+      width: 2px;
+      height: 151px;
+      background: linear-gradient(180deg, #f8f8fecc 0%, #9599f7ff 100%);
+    }
+  }
+
+  // 卡片
+  .guide-card {
+    // width: 502px;
+    // height: 160px;
+    position: relative;
+    padding: 25px 30px 28px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    background: linear-gradient(90deg, #6065ecff 0%, #bcbfffff 100%);
+    // background-image: url("~@/assets/images/guide-bg.png");
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    .starImg-left {
+      position: absolute;
+      left: 0;
+      top: -16px;
+      width: 24px;
+      height: 32px;
+    }
+    .starImg-right {
+      position: absolute;
+      right: -20px;
+      bottom: -12px;
+      width: 61px;
+      height: 48px;
+    }
+    p {
+      text-align: left;
+      line-height: 30px;
+    }
+    .guide-title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .guide-text {
+      margin-top: 17px;
+      font-size: 18px;
+    }
+
+    // img {
+    //   width: 130px;
+    //   height: 7px;
+    //   margin: 24px 0 0 175px;
+    // }
+  }
+
+  // 按钮
+  .guide-btns {
+    margin: 24px 0 0;
+
+    span {
+      width: 110px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 4px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .guide-exit {
+      color: #6065EC;
+      background-color: #fff;
+    }
+
+    .guide-next {
+      margin-left: 26px;
+      color: #fff;
+      background-color: #6065EC;
+    }
+  }
+
+  .guide-line {
+    width: 120px;
+    height: 25px;
+    margin-top: 31px;
+  }
+}
+
+.guideMask3 {
+  justify-content: flex-end;
+  padding-left: 0;
+  // padding-right: 21%;
+  .guide-box {
+    margin-top: 300px;
+    .guide-line {
+      margin-top: 0;
+    }
+    .guide-btns {
+      padding-right: 169px;
+    }
+    
+  }
+}
+
+.guideMask4 {
+  // padding-left: 26%;
+  .guide-box {
+    margin-top: 265px;
+    .guide-line {
+      margin-top: 0;
+    }
+    .guide-btns {
+      padding-left: 225px;
+    }
+  }
+}
+
+.guideMask5 {
+  justify-content: center;
+  .guide-btns {
+    padding-right: 169px;
+  }
+}
+
+.guideMask6 {
+  .guide-box {
+    margin-top: 100px;
+    .guide-line {
+      margin-top: 0;
+    }
+    .guide-btns {
+      padding-right: 120px;
+    }
+  }
+}
+
+.guideMask7 {
+  .guide-box {
+    margin-top: 70px;
+
+    .guide-line {
+      margin-top: 37px;
+    }
+  }
+}
+
+.guideMask8 {
+  .guide-box {
+    margin-top: 19%;
+
+    .guide-line {
+      margin-top: 29px;
+    }
+  }
+}
+
+.guideMask9 {
+  // padding-left: 160px;
+  .guide-box {
+    margin-top: 0;
+    position: absolute;
+    top: 265px;
+    left: 50%;
+    transform: translateX(-50%);
+    .guide-btns {
+      // padding-left: 169px;
+    }
+  }
+  
+}
+
+.guideHigh {
+  position: relative;
+  // margin-right: 0 !important;
+  padding: 7px 15px;
+  border-radius: 6px;
+  background-color: #fff !important;
+  z-index: 3001 !important;
+  pointer-events: none;
+}
+
+.guideHigh6 {
+  width: 130px;
+  height: 50px;
+  margin-left: -15px;
+  padding: 5px 10px;
+}
+
+.guideHigh7 {
+  position: absolute;
+  top: 9%;
+  right: 5%;
+  width: 148px;
+  height: 80px;
+}
+
+.guideHigh9 {
+  margin: 0 10px;
+  padding: 0;
+}
+
+.guidePad4 {
+  // padding: 8px 20px 8px 10px;
+  // padding: 10px 0;
+  width: 458px;
+  padding: 5px 0 10px;
+  margin-left: -10px;
+}
+
+.guidePad5 {
+  width: 420px;
+  padding: 20px 0;
+}
+
+.guidePad6 {
+  padding: 0;
+}
+
+.guidePad7 {
+  padding: 7px 13px 7px 0px;
+}
+
+.guidePad8 {
+  padding:  0 7px;
+}
+
+.guidePad10 {
+  padding: 7px;
+}
+
+.guidePad10-1 {
+  padding: 0 10px 10px;
+}
+
+.guidePad11 {
+  padding: 10px 20px;
+}
+
+.btn-active {
+  color: #409EFF !important;
+  border-color: #c6e2ff !important;
+  background-color: #ecf5ff !important;
+}
+
+.el-message-box {
+  .el-message-box__btns {
+    .el-button--primary {
+      background-color: @themeColor  !important;
+      border-color: @themeColor  !important;
+    }
+  }
+}
+
+//主题字色
+.font-color {
+  color: @themeColor  !important;
+}
+
+.el-pagination .el-pagination__sizes .el-input .el-input__inner:hover {
+  border-color: @themeColor  !important;
+}
+
+.el-pagination .btn-prev:hover,
+.el-pagination .btn-next:hover {
+  border-color: @themeColor  !important;
+  color: @themeColor  !important;
+}
+
+.el-pagination .el-pager li.active {
+  background-color: @themeColor  !important;
+  color: white !important;
+}
+
+.el-pagination .el-pager li.active:hover {
+  color: white !important;
+}
+
+.el-pagination .el-pager li:hover {
+  color: @themeColor  !important;
+}
+
+.el-pagination .el-input__inner {
+  height: 28px !important;
+}

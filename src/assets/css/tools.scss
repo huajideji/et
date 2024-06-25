@@ -1,0 +1,16 @@
+@import "@/assets/css/mixin.scss";
+// .btn{
+//     @include background_color;
+//     @include font_color2;
+//     border: none!important;
+//   }
+// .el-button:focus, .el-button:hover{
+//     @include background_color;
+//     @include font_color2
+// }
+.el-button--text:focus, .el-button--text:hover{
+    @include font_color
+}
+.el-tabs__item.is-active{
+    @include font_color1
+}

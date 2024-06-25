@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "colorStyleIcon"; /* Project id 3986669 */
+  src: url('iconfont.woff2?t=1680223044990') format('woff2'),
+       url('iconfont.woff?t=1680223044990') format('woff'),
+       url('iconfont.ttf?t=1680223044990') format('truetype');
+}
+
+.colorStyleIcon {
+  font-family: "colorStyleIcon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fontIcon-string span{
+  display: inline-block;
+  width: 9px;
+}
+.fontIcon-string-blue:first-child{
+  color: #3662FF;
+}
+.fontIcon-string-blue:nth-child(2){
+  color: rgba(96, 101, 236, 0.2);
+}
+.fontIcon-string {
+  display: flex;
+  margin-right: 5px;
+}
+.icon-yuan1:before {
+  content: "\e605";
+}
+
+.icon-yuan2:before {
+  content: "\e606";
+}
+
+.icon-wen:before {
+  content: "\e607";
+}
+
+.icon-dingwei:before {
+  content: "\e608";
+}
+
+.icon-laba:before {
+  content: "\e609";
+}
+
+.icon-xiaoxi:before {
+  content: "\e60a";
+}
+
+.icon-shugang1:before {
+  content: "\e603";
+}
+
+.icon-shugang2:before {
+  content: "\e604";
+}
+

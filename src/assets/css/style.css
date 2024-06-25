@@ -1,0 +1,65 @@
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.saveBtn {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  margin-left: -18px;
+  box-shadow: 4px 4px 4px 4px rgba(175,175,175,0.5);
+  background-color: #fff;
+}
+
+#save,
+.saveForm {
+  margin: 15px 30px 20px;
+  padding: 6px 31px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #6065ec;
+  cursor: pointer;
+}
+
+.fontSize-16{
+  font-size: 16px;
+}
+.fontWeight-700{
+  font-weight: 700;
+}
